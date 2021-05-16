@@ -12,12 +12,6 @@
   "siteTitleShort": "GA Starter",
   "socialLinks": [
     {
-      "id": 0,
-      "name": "Telegram",
-      "link": "https://t.me/argahv",
-      "icon": "/icons/telegram.svg"
-    },
-    {
       "id": 1,
       "name": "Github",
       "link": "https://github.com/argahv",
@@ -27,13 +21,13 @@
       "id": 15,
       "name": "Instagram",
       "link": "https://instagram.com/argahv",
-      "icon": "/icons/github.svg"
+      "icon": "assets/icons8-instagram-64.png"
     },
     {
       "id": 3,
       "name": "Twitter",
       "link": "https://twitter.com/argahv",
-      "icon": "/icons/twitter.svg"
+      "icon": "assets/icons8-twitter-64.png"
     }
   ],
   "siteRssTitle": "Gatsby Advanced Starter RSS feed",
