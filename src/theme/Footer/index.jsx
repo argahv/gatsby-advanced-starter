@@ -1,24 +1,23 @@
 import React from "react";
 import { Container } from "components/common";
 import { Wrapper, Flex, Links, Details } from "./styles";
-import { siteTitle, socialLinks } from "../../../data/SiteConfig";
+import {
+  siteTitle,
+  socialLinks,
+  copyright,
+  siteRss,
+} from "../../../data/SiteConfig";
+// import { Link } from "gatsby";
 
 export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
         <h2>{siteTitle}</h2>
-        <span>
-          © All rights are reserved | {new Date().getFullYear()}
-          by{" "}
-          <a
-            href="https://raghavkattel.com.np"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Raghav
-          </a>
-        </span>
+        <span>{copyright}</span>
+        {/* <Link to={siteRss}>
+          <button type="button">Subscribe</button>
+        </Link> */}
       </Details>
       <Links>
         {socialLinks.map(({ id, name, link, icon }) => (

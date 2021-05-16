@@ -24,6 +24,7 @@ collections:
       - { label: "Cover Image", name: "cover", widget: "image" }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Category", name: "category", widget: "string" }
+      - { label: "SEO Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: settings
@@ -37,3 +38,80 @@ collections:
             name: siteTitle
             widget: string
             required: true
+          - label: Site Title Short
+            name: siteTitleShort
+            widget: string
+            required: true
+          - label: Site Description
+            name: siteDescription
+            widget: string
+            required: true
+          - label: Logo
+            name: siteLogo
+            widget: image
+            default: "/logos/logo-1024.png"
+          - label: Site Url
+            name: siteUrl
+            widget: string
+            required: true
+          - label: Path Prefix
+            name: pathPrefix
+            widget: string
+            required: true
+          - label: Site RSS Title
+            name: siteRssTitle
+            widget: string
+            required: true
+          - label: siteFBAppID
+            name: siteFBAppID
+            widget: string
+            required: true
+          - label: googleAnalyticsID
+            name: googleAnalyticsID
+            widget: string
+            required: true
+          - label: disqusShortname
+            name: disqusShortname
+            widget: string
+            required: true
+          - label: dateFromFormat
+            name: dateFromFormat
+            widget: string
+            required: true
+          - label: dateFormat
+            name: dateFormat
+            widget: string
+            required: true
+          - label: postsPerPage
+            name: postsPerPage
+            widget: string
+            required: true
+          - label: userName
+            name: userName
+            widget: string
+            required: true
+          - label: userEmail
+            name: userEmail
+            widget: string
+            required: true
+          - label: userPhone
+            name: userPhone
+            widget: string
+            required: true
+          - label: userLocation
+            name: userLocation
+            widget: string
+            required: true
+          - label: userAvatar
+            name: userAvatar
+            widget: image
+            required: true
+          - label: Social Links
+            name: socialLinks
+            required: true
+            widget: list
+            minimize_collapsed: true
+            fields:
+              - { label: "name", name: "name", widget: "string" }
+              - { label: "link", name: "link", widget: "string" }
+              - { label: "icon", name: "icon", widget: "image" }

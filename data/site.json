@@ -15,7 +15,7 @@
   "postsPerPage": 4,
   "userName": "Advanced User",
   "userEmail": "AdvancedUser@example.com",
-  "userTwitter": "",
+  "userPhone": "9865430408",
   "userLocation": "North Pole, Earth",
   "userAvatar": "https://api.adorable.io/avatars/150/test.png",
   "userDescription": "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.",
@@ -25,24 +25,6 @@
       "name": "Telegram",
       "link": "https://t.me/argahv",
       "icon": "/icons/telegram.svg"
-    },
-    {
-      "id": 1,
-      "name": "Github",
-      "link": "https://github.com/argahv",
-      "icon": "/icons/github.svg"
-    },
-    {
-      "id": 15,
-      "name": "Instagram",
-      "link": "https://instagram.com/argahv",
-      "icon": "/icons/github.svg"
-    },
-    {
-      "id": 3,
-      "name": "Twitter",
-      "link": "https://twitter.com/argahv",
-      "icon": "/icons/twitter.svg"
     }
   ],
   "copyright": "Copyright © 2020. Advanced User",
