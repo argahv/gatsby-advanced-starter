@@ -622,7 +622,7 @@ export const Global = createGlobalStyle`
     background: ${({ theme }) => colors[theme].primaryColor};
     };
 
-    a {
+    a,p,h1,h2,h3,h4,h5,h6,pre {
       text-decoration: none;
       color:${({ theme }) => colors[theme].textColor};
       transition:.3s;

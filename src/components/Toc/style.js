@@ -4,7 +4,7 @@ import colors from "theme/colors.json";
 export const TocStyle = styled.div`
   nav {
     position: fixed;
-    top: 50vh;
+    top: 30vh;
     right: 5vw;
     margin-left: 36px;
     max-width: 250px;
