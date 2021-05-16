@@ -1,6 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
+// import { Button } from "components/common";
 
 function PostTags({ tags }) {
   return (
@@ -12,7 +13,7 @@ function PostTags({ tags }) {
             style={{ textDecoration: "none" }}
             to={`/tags/${_.kebabCase(tag)}`}
           >
-            <button type="button">{tag}</button>
+            <button type="primary">{tag}</button>
           </Link>
         ))}
     </div>

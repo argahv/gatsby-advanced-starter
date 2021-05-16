@@ -1,0 +1,14 @@
+{
+  "light": {
+    "background": "#eee",
+    "primaryColor": "#2D4F6C",
+    "backgroundImage": "linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%)",
+    "textColor": "black"
+  },
+  "dark": {
+    "background": "#222729",
+    "primaryColor": "black",
+    "backgroundImage": "linear-gradient(315deg, #222729 0%, #000000 50%)",
+    "textColor": "#cccccc"
+  }
+}

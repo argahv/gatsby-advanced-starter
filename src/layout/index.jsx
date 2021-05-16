@@ -1,17 +1,18 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import config from "../../data/SiteConfig";
-import "./index.css";
-import { Layout } from "./styles";
+import { Wrapper } from "./styles";
+import { Header } from "../theme";
 
 export default function MainLayout({ children }) {
   return (
-    <Layout>
+    <Wrapper id="layout">
+      <Header />
       <Helmet>
         <meta name="description" content={config.siteDescription} />
         <html lang="en" />
       </Helmet>
       {children}
-    </Layout>
+    </Wrapper>
   );
 }

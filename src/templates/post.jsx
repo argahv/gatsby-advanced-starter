@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../layout";
+import { Container, Layout } from "../components/common";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
@@ -11,6 +11,7 @@ import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
+import Toc from "components/Toc";
 
 export default function PostTemplate({ data, pageContext }) {
   const { slug } = pageContext;
@@ -27,10 +28,13 @@ export default function PostTemplate({ data, pageContext }) {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
+        <Toc post={postNode.tableOfContents} />
         <div>
-          <h1>{post.title}</h1>
-          {/* eslint-disable-next-line react/no-danger */}
-          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          <Container>
+            <h1>{post.title}</h1>
+            {/* eslint-disable-next-line react/no-danger */}
+            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          </Container>
           <div className="post-meta">
             <PostTags tags={post.tags} />
             <SocialLinks postPath={slug} postNode={postNode} />
@@ -51,6 +55,7 @@ export const pageQuery = graphql`
       html
       timeToRead
       excerpt
+      tableOfContents
       frontmatter {
         title
         cover

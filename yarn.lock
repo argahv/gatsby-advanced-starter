@@ -6726,6 +6726,11 @@ gatsby-plugin-react-helmet@^4.0.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
+gatsby-plugin-root-import@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-root-import/-/gatsby-plugin-root-import-2.0.6.tgz#72f812ce7a16d67773651c7db1d42f68970ae73c"
+  integrity sha512-eG0D+cVL5djVI5nxuQoZE4wBBL6rUq/KBPqPv+69vYolTXzlyj0+vIkqr2Y/xWt8hTK9BB8IOMltGxUmXIenig==
+
 gatsby-plugin-sharp@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.1.0.tgz"
@@ -12773,6 +12778,15 @@ react-scroll-sync@^0.8.0:
   version "0.8.0"
   resolved "https://registry.npmjs.org/react-scroll-sync/-/react-scroll-sync-0.8.0.tgz"
   integrity sha512-Ms9srm41UM+lWexuqdocXjqaqqt6ZRSFxcudgB0sYhC7Or+m12WemTwY8BaQCRf7hA8zHDk55FHvMkqsH7gF+w==
+
+react-scrollspy@^3.4.3:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/react-scrollspy/-/react-scrollspy-3.4.3.tgz#12bccebc7e2dfe228b873288b3f473904edb3854"
+  integrity sha512-c2QZpMPWxm1HF71h1EqaxBldx2zLYO0aZ24Bcuo2mUWF79T+F6qOtr7XJCzUDm99NOwhVKQD01a7A8VC6c90CQ==
+  dependencies:
+    babel-runtime "^6.26.0"
+    classnames "^2.2.5"
+    prop-types "^15.5.10"
 
 react-select@^2.4.2, react-select@^2.4.3:
   version "2.4.4"

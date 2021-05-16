@@ -1,6 +1,7 @@
 const urljoin = require("url-join");
 const path = require("path");
 const config = require("./data/SiteConfig");
+const { siteTitle } = require("./data/SiteConfig");
 
 // Make sure that pathPrefix is not empty
 const validatedPathPrefix = config.pathPrefix === "" ? "/" : config.pathPrefix;
@@ -125,7 +126,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata;
           ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Advanced Starter";
+          ret.generator = siteTitle;
           return ret;
         },
         query: `
@@ -194,15 +195,23 @@ module.exports = {
         ],
       },
     },
-     {
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           `limelight`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+          `raleway\:500`,
         ],
-        display: 'swap'
-      }
-    }
+        display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        src: path.join(__dirname, "src"),
+        // pages: path.join(__dirname, "src/pages"),
+      },
+    },
   ],
 };

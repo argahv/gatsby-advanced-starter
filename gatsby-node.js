@@ -5,6 +5,14 @@ const _ = require("lodash");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
 
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, "src"), "node_modules"],
+    },
+  });
+};
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   let slug;
@@ -56,6 +64,7 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            tableOfContents
             frontmatter {
               title
               tags
