@@ -1,5 +1,6 @@
 {
   "userLocation": "North Pole, Earth",
+  "userPhone": "9865430408",
   "userAvatar": "https://api.adorable.io/avatars/150/test.png",
   "dateFormat": "DD/MM/YYYY",
   "disqusShortname": "https-vagr9k-github-io-gatsby-advanced-starter",
@@ -20,7 +21,7 @@
       "id": 1,
       "name": "Github",
       "link": "https://github.com/argahv",
-      "icon": "/icons/github.svg"
+      "icon": "assets/github-mark-32px.png"
     },
     {
       "id": 15,
