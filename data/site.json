@@ -1,24 +1,14 @@
 {
-  "siteTitle": "Gatsby Advanced Starter",
-  "siteTitleShort": "GA Starter",
-  "siteLogo": "/logos/logo-1024.png",
-  "siteUrl": "https://gatsby-advanced-starter-demo.netlify.com",
-  "pathPrefix": "/",
-  "siteDescription": "A GatsbyJS starter with Advanced design in mind.",
-  "siteRss": "/rss.xml",
-  "siteRssTitle": "Gatsby Advanced Starter RSS feed",
-  "siteFBAppID": "1825356251115265",
-  "googleAnalyticsID": "UA-47311644-5",
-  "disqusShortname": "https-vagr9k-github-io-gatsby-advanced-starter",
-  "dateFromFormat": "YYYY-MM-DD",
-  "dateFormat": "DD/MM/YYYY",
-  "postsPerPage": 4,
-  "userName": "Advanced User",
-  "userEmail": "AdvancedUser@example.com",
-  "userTwitter": "",
   "userLocation": "North Pole, Earth",
   "userAvatar": "https://api.adorable.io/avatars/150/test.png",
-  "userDescription": "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.",
+  "dateFormat": "DD/MM/YYYY",
+  "disqusShortname": "https-vagr9k-github-io-gatsby-advanced-starter",
+  "copyright": "Copyright © 2020. Advanced User",
+  "userTwitter": "",
+  "siteUrl": "https://gatsby-advanced-starter-demo.netlify.com",
+  "googleAnalyticsID": "UA-47311644-5",
+  "siteRss": "/rss.xml",
+  "siteTitleShort": "GA Starter",
   "socialLinks": [
     {
       "id": 0,
@@ -45,7 +35,17 @@
       "icon": "/icons/twitter.svg"
     }
   ],
-  "copyright": "Copyright © 2020. Advanced User",
-  "themeColor": "#c62828",
-  "backgroundColor": "#e0e0e0"
+  "siteRssTitle": "Gatsby Advanced Starter RSS feed",
+  "dateFromFormat": "YYYY-MM-DD",
+  "userEmail": "AdvancedUser@example.com",
+  "userDescription": "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.",
+  "siteTitle": "Advanced Portfolio Blog",
+  "siteLogo": "/logos/logo-1024.png",
+  "siteDescription": "A GatsbyJS starter with Advanced design in mind.",
+  "backgroundColor": "#e0e0e0",
+  "userName": "Advanced User",
+  "pathPrefix": "/",
+  "postsPerPage": 4,
+  "siteFBAppID": "1825356251115265",
+  "themeColor": "#c62828"
 }
