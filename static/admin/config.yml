@@ -115,3 +115,7 @@ collections:
               - { label: "name", name: "name", widget: "string" }
               - { label: "link", name: "link", widget: "string" }
               - { label: "icon", name: "icon", widget: "image" }
+          - label: Copyright Text
+            name: copyRight
+            widget: string
+            required: true
