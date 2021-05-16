@@ -12,5 +12,5 @@ export const Button = ({ ...props }) => {
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  type: PropsTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
