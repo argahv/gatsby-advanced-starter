@@ -1,13 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import colors from "theme/colors.json";
 
 export const Wrapper = styled.div`
   a {
-    color: #000;
+    color: ${({ theme }) => colors[theme].textColor};
     text-decoration: none;
 
-		@media (max-width: 960px) {
-			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-		}
+    @media (max-width: 960px) {
+      color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
+    }
   }
 
   ${({ desktop }) =>
