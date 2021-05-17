@@ -12,6 +12,7 @@ import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
 import Toc from "components/Toc";
+import moment from "moment";
 
 export default function PostTemplate({ data, pageContext }) {
   const { slug } = pageContext;
@@ -32,6 +33,7 @@ export default function PostTemplate({ data, pageContext }) {
         <div>
           <Container>
             <h1>{post.title}</h1>
+            <p>{moment(post.date).format("MMM Do, YY")}</p>
             {/* eslint-disable-next-line react/no-danger */}
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
           </Container>

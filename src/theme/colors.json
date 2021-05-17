@@ -11,6 +11,6 @@
     "primaryColor": "#2A3035",
     "backgroundImage": "linear-gradient(315deg, #2A3035 0%, #222729 50%)",
     "textColor": "#cccccc",
-    "textColorInv": "white"
+    "textColorInv": "#2A3035"
   }
 }

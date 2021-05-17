@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Card } from "components/common";
+import { ListingStyle } from "./styles";
 
 function PostListing({ postEdges }) {
   const postList = [];
@@ -16,16 +17,11 @@ function PostListing({ postEdges }) {
   });
 
   return (
-    <div>
-      {
-        /* Your post list here. */
-        postList.map((post) => (
-          <Link to={post.path} key={post.title}>
-            <h1>{post.title}</h1>
-          </Link>
-        ))
-      }
-    </div>
+    <ListingStyle>
+      {postList.map((post) => (
+        <Card key={`${post.title}-${post.path}`} post={post} />
+      ))}
+    </ListingStyle>
   );
 }
 

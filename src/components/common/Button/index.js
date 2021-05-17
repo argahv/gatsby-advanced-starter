@@ -5,7 +5,6 @@ import { ButtonStyle } from "./style";
 
 export const Button = ({ ...props }) => {
   const { theme } = useContext(ThemeContext);
-  console.log(`props`, props);
 
   return <ButtonStyle theme={theme} {...props} />;
 };

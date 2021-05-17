@@ -25,7 +25,9 @@ const NavbarLinks = ({ desktop }) => {
       <AnchorLink href="#projects">Projects</AnchorLink>
       <AnchorLink href="#contact">Contact</AnchorLink> */}
       {links.map(({ title, link }) => (
-        <Link to={link}>{title}</Link>
+        <Link key={`nav-${title}`} to={link}>
+          {title}
+        </Link>
       ))}
       <ToggleTheme />
     </Wrapper>

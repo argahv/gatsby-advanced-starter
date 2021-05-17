@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
-import { Layout } from "../components/common";
+import { Button, Layout } from "../components/common";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
@@ -17,7 +17,12 @@ function Listing({ pageContext, data }) {
 
     return (
       <div className="paging-container">
-        {!isFirstPage && <Link to={prevPage}>Previous</Link>}
+        {!isFirstPage && (
+          <Link to={prevPage}>
+            {" "}
+            <Button type="primary">Previous</Button>
+          </Link>
+        )}
         {[...Array(pageCount)].map((_val, index) => {
           const pageNum = index + 1;
           return (
@@ -25,11 +30,19 @@ function Listing({ pageContext, data }) {
               key={`listing-page-${pageNum}`}
               to={pageNum === 1 ? "/" : `/${pageNum}/`}
             >
-              {pageNum}
+              <Button
+                type={pageNum === currentPageNum ? "primary" : "secondary"}
+              >
+                {pageNum}
+              </Button>
             </Link>
           );
         })}
-        {!isLastPage && <Link to={nextPage}>Next</Link>}
+        {!isLastPage && (
+          <Link to={nextPage}>
+            <Button type="primary">Next</Button>
+          </Link>
+        )}
       </div>
     );
   }
@@ -37,45 +50,39 @@ function Listing({ pageContext, data }) {
   const postEdges = data.allMarkdownRemark.edges;
 
   return (
-    <Layout>
-      <div className="listing-container">
-        <div className="posts-container">
-          <Helmet title={config.siteTitle} />
-          <SEO />
-          <PostListing postEdges={postEdges} />
-        </div>
-        {renderPaging()}
-      </div>
-    </Layout>
+    <>
+      <PostListing postEdges={postEdges} />
+      {renderPaging()}
+    </>
   );
 }
 
 export default Listing;
 
 /* eslint no-undef: "off" */
-export const listingQuery = graphql`
-  query ListingQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
-          }
-        }
-      }
-    }
-  }
-`;
+// export const listingQuery = graphql`
+//   query ListingQuery($skip: Int!, $limit: Int!) {
+//     allMarkdownRemark(
+//       sort: { fields: [frontmatter___date], order: DESC }
+//       limit: $limit
+//       skip: $skip
+//     ) {
+//       edges {
+//         node {
+//           fields {
+//             slug
+//             date
+//           }
+//           excerpt
+//           timeToRead
+//           frontmatter {
+//             title
+//             tags
+//             cover
+//             date
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
