@@ -4,16 +4,32 @@ import { ThemeContext } from "providers/ThemeProvider";
 import React, { useContext } from "react";
 import { CardStyle } from "./style";
 
-export const Card = ({ post }) => {
+export const Card = ({
+  hoverable = false,
+  path = "",
+  tags = [],
+  cover,
+  title = "",
+  date,
+  excerpt = "",
+  timeToRead = "",
+  post,
+  ...props
+}) => {
   const { theme } = useContext(ThemeContext);
-  const { path, tags, cover, title, date, excerpt, timeToRead } = post;
+
   return (
     <CardStyle
-      whileHover={{
-        scale: 1.05,
-        transition: { duration: 0.25 },
-      }}
+      whileHover={
+        hoverable
+          ? {
+              scale: 1.05,
+              transition: { duration: 0.25 },
+            }
+          : null
+      }
       theme={theme}
+      {...props}
     >
       {cover && <img src={cover} alt={title} />}
       <div className="detail-container">

@@ -18,8 +18,15 @@ function PostListing({ postEdges }) {
 
   return (
     <ListingStyle>
-      {postList.map((post) => (
-        <Card key={`${post.title}-${post.path}`} post={post} />
+      {postList.map(({ path, cover, title, date }) => (
+        <Card
+          hoverable
+          key={`${title}-${path}`}
+          title={title}
+          date={date}
+          path={path}
+          cover={cover}
+        />
       ))}
     </ListingStyle>
   );
