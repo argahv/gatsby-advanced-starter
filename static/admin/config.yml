@@ -30,6 +30,18 @@ collections:
   - name: settings
     label: Settings
     files:
+      - name: headerNavigationLinks
+        label: Header Links
+        file: "data/navigationLinks.json"
+        fields:
+          - label: Links
+            name: headers
+            required: true
+            widget: list
+            minimize_collapsed: true
+            fields:
+              - { label: "title", name: "title", widget: "string" }
+              - { label: "link", name: "link", widget: "string" }
       - name: general
         label: General
         file: "data/site.json"
@@ -98,6 +110,10 @@ collections:
             name: userPhone
             widget: string
             required: true
+          - label: userTwitter
+            name: userTwitter
+            widget: string
+            required: true
           - label: userLocation
             name: userLocation
             widget: string
@@ -116,6 +132,6 @@ collections:
               - { label: "link", name: "link", widget: "string" }
               - { label: "icon", name: "icon", widget: "image" }
           - label: Copyright Text
-            name: copyRight
+            name: copyright
             widget: string
             required: true

@@ -7,7 +7,6 @@ import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
-import Footer from "../components/Footer/Footer";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
@@ -21,6 +20,7 @@ export default function PostTemplate({ data, pageContext }) {
   if (!post.id) {
     post.id = slug;
   }
+  console.log(`post`, post);
 
   return (
     <Layout>
@@ -34,6 +34,11 @@ export default function PostTemplate({ data, pageContext }) {
           <Container>
             <h1>{post.title}</h1>
             <p>{moment(post.date).format("MMM Do, YY")}</p>
+            {post.cover && (
+              <div style={{ width: "75%", height: "auto", margin: "auto" }}>
+                <img src={post.cover} alt={post.title} />
+              </div>
+            )}
             {/* eslint-disable-next-line react/no-danger */}
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
           </Container>
@@ -43,7 +48,6 @@ export default function PostTemplate({ data, pageContext }) {
           </div>
           <UserInfo config={config} />
           <Disqus postNode={postNode} />
-          <Footer config={config} />
         </div>
       </div>
     </Layout>

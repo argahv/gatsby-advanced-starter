@@ -6,8 +6,8 @@ const Toc = ({ post }) => {
   const { theme } = useContext(ThemeContext);
   return (
     <TocStyle theme={theme}>
-      {/* <h3>Table of Contents</h3> */}
       <nav>
+        <h4>Table of Contents</h4>
         <div dangerouslySetInnerHTML={{ __html: post }} />
       </nav>
     </TocStyle>

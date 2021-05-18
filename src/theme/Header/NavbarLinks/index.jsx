@@ -4,17 +4,7 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../../providers/ThemeProvider";
 import ToggleTheme from "../../Header/ToggleTheme";
 import { Wrapper } from "./styles";
-
-const links = [
-  {
-    title: "About",
-    link: "/about",
-  },
-  {
-    title: "Contact",
-    link: "/contact",
-  },
-];
+import links from "../../../../data/navigationLinks.json";
 
 const NavbarLinks = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
@@ -24,7 +14,7 @@ const NavbarLinks = ({ desktop }) => {
       {/* <AnchorLink href="#about">About</AnchorLink>
       <AnchorLink href="#projects">Projects</AnchorLink>
       <AnchorLink href="#contact">Contact</AnchorLink> */}
-      {links.map(({ title, link }) => (
+      {links.headers.map(({ title, link }) => (
         <Link key={`nav-${title}`} to={link}>
           {title}
         </Link>

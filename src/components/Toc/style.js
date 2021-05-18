@@ -21,6 +21,11 @@ export const TocStyle = styled.div`
     margin-left: 24px;
     font-size: 13px;
   }
+
+  h4 {
+    text-align: center;
+  }
+
   ul > li > a,
   p {
     /* color: ${({ theme }) => colors[theme].primaryColor}; */
@@ -31,7 +36,10 @@ export const TocStyle = styled.div`
 
   @media only screen and (max-width: 720px) {
     nav {
-      display: none;
+      position: relative;
+      top: 0;
+      width: 100% !important;
+      margin: 2px auto;
     }
   }
 `;
