@@ -1,13 +1,15 @@
 ---
-title: The world's 50 most powerful blogs
+title: The world's 25 most powerful blogs
 date: 2021-05-17T02:54:24.925Z
 cover: assets/how-to-start-a-blog-featured-image.jpg
 slug: powerful-blogs
-category: blogs, post
+category: blogs
 description: powerful, boing, tom cruise
 tags:
   - blogs
+  - post
 ---
+
 <!--StartFragment-->
 
 From Prince Harry in Afghanistan to Tom Cruise ranting about Scientology and footage from the Burmese uprising, blogging has never been bigger. It can help elect presidents and take down attorney generals while simultaneously celebrating the minutiae of our everyday obsessions. Here are the 50 best reasons to log on
