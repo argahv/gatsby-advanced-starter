@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../../providers/ThemeProvider";
-import { Footer, Header } from "../../../theme";
+import { Header } from "components/Header";
+import { Footer } from "components/Footer";
 import { Container } from "../Container";
 import PropTypes from "prop-types";
 import { Global } from "./styles";
