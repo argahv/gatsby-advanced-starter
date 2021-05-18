@@ -1,4 +1,5 @@
 ---
+template: blog-post
 title: The world's 25 most powerful blogs
 date: 2021-05-17T02:54:24.925Z
 cover: assets/how-to-start-a-blog-featured-image.jpg

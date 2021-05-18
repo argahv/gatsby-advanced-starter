@@ -43,13 +43,13 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "src/content/pages/index.md"
+        file: "src/content/pages/home.md"
         fields:
           - {
               label: "Template",
               name: "template",
               widget: "hidden",
-              default: "index-page",
+              default: "home",
             }
           - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
           - { label: "Title", name: "title", widget: "string" }
