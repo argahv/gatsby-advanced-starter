@@ -4,13 +4,13 @@
     "primaryColor": "#2D4F6C",
     "backgroundImage": "linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%)",
     "textColor": "black",
-    "textColorInv": "white"
+    "secondaryColor": "white"
   },
   "dark": {
     "background": "#222729",
     "primaryColor": "#2A3035",
     "backgroundImage": "linear-gradient(315deg, #2A3035 0%, #222729 50%)",
     "textColor": "#cccccc",
-    "textColorInv": "#2A3035"
+    "secondaryColor": "#2A3035"
   }
 }

@@ -14,6 +14,9 @@ export default function CategoryTemplate({ pageContext, data }) {
         <Helmet
           title={`Posts in category "${category}" | ${config.siteTitle}`}
         />
+        <h1>
+          {postEdges.length} post(s) under the category: "{category}"
+        </h1>
         <PostListing postEdges={postEdges} />
       </div>
     </Layout>

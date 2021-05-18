@@ -4,7 +4,7 @@ import colors from "theme/colors.json";
 
 export const CardStyle = styled(motion.div)`
   border-radius: 3px;
-  background-color: ${({ theme }) => colors[theme].textColorInv};
+  background-color: ${({ theme }) => colors[theme].secondaryColor};
   margin: 2px;
   .detail-container {
     padding: 8px;

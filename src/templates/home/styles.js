@@ -30,8 +30,9 @@ export const CallToAction = styled.div`
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
+  padding: 60px 0;
   .description {
-    padding: 60px;
+    width: 50%;
     h1 {
       font-size: 48px;
       line-height: 48px;
@@ -52,7 +53,7 @@ export const CallToAction = styled.div`
   }
   @media (max-width: 576px) {
     padding: 30px 0;
-    .title {
+    .description {
       font-size: 38px;
     }
     .tagline {

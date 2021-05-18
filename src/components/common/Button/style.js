@@ -12,8 +12,8 @@ export const ButtonStyle = styled.button`
     type === "primary"
       ? css`
           background-color: ${colors[theme].primaryColor};
-          color: ${colors[theme].textColorInv};
-
+          /* color: ${colors[theme].textColorInv}; */
+          color: white;
           &:hover {
             filter: brightness(120%);
             transform: scale(1.06);
