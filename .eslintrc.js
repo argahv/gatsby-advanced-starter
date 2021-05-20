@@ -4,6 +4,6 @@ module.exports = {
     es6: true,
   },
   extends: ["prettier", "plugin:react-hooks/recommended"],
-  plugins: ["react", "prettier", "react-hooks"],
+  plugins: ["prettier", "react-hooks"],
   rules: { "react/prop-types": 0 },
 };

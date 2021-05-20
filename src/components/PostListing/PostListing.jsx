@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "components/common";
-import { ListingStyle } from "./styles";
+import Col from "components/Col";
 
 function PostListing({ postEdges }) {
   const postList = [];
@@ -17,7 +17,7 @@ function PostListing({ postEdges }) {
   });
 
   return (
-    <ListingStyle>
+    <Col columns={4} lg={3} md={2} sm={1}>
       {postList.map(({ path, cover, title, date }) => (
         <Card
           hoverable
@@ -28,7 +28,7 @@ function PostListing({ postEdges }) {
           cover={cover}
         />
       ))}
-    </ListingStyle>
+    </Col>
   );
 }
 

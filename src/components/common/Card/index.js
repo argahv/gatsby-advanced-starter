@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import moment from "moment";
 import { ThemeContext } from "providers/ThemeProvider";
 import React, { useContext } from "react";
+import site from "../../../../data/site.json";
 import { CardStyle } from "./style";
 
 export const Card = ({
@@ -36,7 +37,7 @@ export const Card = ({
         <h3 className="title">
           <Link to={path}>{title}</Link>
         </h3>
-        <h3 className="date">{moment(date).format("MMM Do, YY")}</h3>
+        <h3 className="date">{moment(date).format(site.dateFormat)}</h3>
       </div>
     </CardStyle>
   );

@@ -1,13 +1,10 @@
 import { Button, Layout } from "components/common";
-import { ThemeContext } from "providers/ThemeProvider";
 import React, { useContext } from "react";
-import { CallToAction, SiteDetail } from "./styles";
 import LatestBlogs from "./components/latest-blogs";
 import { graphql, Link } from "gatsby";
+import Col from "components/Col";
 
 const Home = ({ data }) => {
-  const { theme } = useContext(ThemeContext);
-
   const { posts, markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
@@ -17,7 +14,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout title={frontmatter.title}>
-      <CallToAction theme={theme}>
+      <Col columns={2} sm={1} lg={2} md={2}>
         <div className="description">
           <h1>{frontmatter.title}</h1>
           <p>{frontmatter.tagline}</p>
@@ -31,7 +28,7 @@ const Home = ({ data }) => {
             <img src={Image} alt={frontmatter.title} />
           </div>
         )}
-      </CallToAction>
+      </Col>
 
       <LatestBlogs postEdges={postEdges} />
     </Layout>

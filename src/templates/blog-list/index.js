@@ -13,7 +13,7 @@ function Listing({ pageContext, data }) {
     const isLastPage = currentPageNum === pageCount;
 
     return (
-      <div className="paging-container">
+      <div style={{ textAlign: "center", padding: 10 }}>
         {!isFirstPage && (
           <Link to={prevPage}>
             {" "}

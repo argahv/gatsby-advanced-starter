@@ -628,8 +628,9 @@ export const Global = createGlobalStyle`
       transition:.3s;
     }
     a:hover{
-      text-decoration:underline;
-      /* color:${({ theme }) => `lighten(0.9, ${colors[theme].textColor}`}; */
+      /* text-decoration:underline; */
+      color:${({ theme }) => colors[theme].primaryColor};
+      transition:.4s all;
     }
 
     input, select, textarea, button {

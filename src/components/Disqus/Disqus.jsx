@@ -9,6 +9,7 @@ function Disqus({ postNode }) {
   }
   const post = postNode.frontmatter;
   const url = urljoin(config.siteUrl, config.pathPrefix, postNode.fields.slug);
+  console.log(`url`, url);
   return (
     <DisqusPlugin
       config={{

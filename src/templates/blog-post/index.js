@@ -8,7 +8,6 @@ import PostTags from "components/PostTags/PostTags";
 import SocialLinks from "components/SocialLinks/SocialLinks";
 import SEO from "components/SEO/SEO";
 import config from "../../../data/SiteConfig";
-import "./post.css";
 import Toc from "components/Toc";
 import moment from "moment";
 
@@ -19,7 +18,6 @@ export default function PostTemplate({ data, pageContext }) {
   if (!post.id) {
     post.id = slug;
   }
-  console.log(`post`, post);
 
   return (
     <Layout>
@@ -32,7 +30,9 @@ export default function PostTemplate({ data, pageContext }) {
         <div>
           <Container>
             <h1>{post.title}</h1>
-            <p>{moment(post.date).format("MMM Do, YY")}</p>
+            <p style={{ fontSize: 18, lineHeight: 1.7 }}>
+              {moment(post.date).format(config.dateFormat)}
+            </p>
             {post.cover && (
               <div style={{ width: "75%", height: "auto", margin: "auto" }}>
                 <img src={post.cover} alt={post.title} />
