@@ -1,12 +1,29 @@
 ---
 template: home
 slug: /
-title: Advanced Portfolio Starter
-tagline: Dynamic Portfolio Website made using Styled Components and Gatsby
+title: Cupidatat impedit v
+tagline: Sunt et a praesentiu
 featuredImage: assets/undraw_ordinary_day_re_v5hy.png
 cta:
-  ctaText: Contact Me
-  ctaLink: /contact
+  ctaText: Fugiat et deleniti v
+  ctaLink: Excepturi voluptates
+shortDescription1:
+  leftSide:
+    quote1: Corrupti quo aperia
+    leftSideDescription1: Laborum earum cum cu
+  rightSide:
+    ctaShortDesc1Title: Possimus natus nemo
+    ctaShortDesc1Link: Eligendi rerum venia
+skills:
+  - skillTitle: Vladimir Mccall
+    skillDescription: Velit et aute adipi
+    image: assets/github-mark-32px.png
+bannerOne:
+  bannerOneTitle: Sint id facere ipsum
+  bannerOneDesc: Quis irure veritatis
+  bannerOneCta:
+    bannerOneCtaTitle: Fugit provident eo
+    bannerOneCtaLink: Incidunt est dolori
 ---
 
 <!--StartFragment-->
