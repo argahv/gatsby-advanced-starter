@@ -1,3 +1,4 @@
+ <strong>Live DEMO https://starter-arg.netlify.app </strong>
 <div align="center" style="margin-bottom:30px">
     <a href='https://github.com/vagr9k/gatsby-advanced-starter/blob/master/LICENSE'>
     <img src="https://img.shields.io/github/license/vagr9k/gatsby-advanced-starter.svg" alt="Logo" />
